@@ -3,7 +3,9 @@ layout: post.njk
 title: About
 ---
 
-Undoubtably one of the great minds of our time, Christopher Hitchens challenged his readers to think deeply on topics of politics, religion, war, and science. This Jekyll theme is designed in his memory.
+Undoubtably one of the great minds of our time, Christopher Hitchens challenged his readers to think deeply on topics of politics, religion, war, and science. This Eleventy theme is designed in his memory.
+
+This is a faithful port of the [original Hitchens Jekyll theme](https://github.com/patdryburgh/hitchens) by [Pat Dryburgh](https://patdryburgh.com), converted to work with [Eleventy 3.0](https://www.11ty.dev/). The theme maintains visual parity with the original while leveraging modern static site generation tools.
 
 <figure>
   <img alt="Christopher Hitchens" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Christopher_Hitchens_2008-04-24_001.jpg" />
