@@ -60,7 +60,7 @@ The navigation menu is configured in `_data/menu.json`:
 [
   {
     "title": "About",
-    "url": "/about.html"
+    "url": "/about/"
   },
   {
     "title": "Source",

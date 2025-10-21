@@ -16,12 +16,14 @@ layout: default.njk
     {{ content | safe }}
   </div>
 
-  <div class="post-meta">
-    {% if author %}
-      <div itemprop="author">{{ author }}</div>
-    {% endif %}
-    <time class="post-date dt-published" datetime="{{ date | htmlDateString }}" itemprop="datePublished">{{ date | readableDate }}</time>
-  </div>
+  {% if date %}
+    <div class="post-meta">
+      {% if author %}
+        <div itemprop="author">{{ author }}</div>
+      {% endif %}
+      <time class="post-date dt-published" datetime="{{ date | htmlDateString }}" itemprop="datePublished">{{ date | readableDate }}</time>
+    </div>
+  {% endif %}
 
   {% if site.disqus and site.disqus.shortname %}
     {% include "disqus-comments.njk" %}
