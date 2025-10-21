@@ -1,0 +1,10 @@
+{% set excerpt = post.templateContent | striptags %}
+{% set excerpt_length = site.excerpt_length or 20 %}
+
+<span class="post-link__excerpt">
+  {% if excerpt.length > 140 and excerpt_length > 0 %}
+    {{ excerpt | truncate(excerpt_length * 6, true, '…') }}
+  {% else %}
+    {{ excerpt }}
+  {% endif %}
+</span>

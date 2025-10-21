@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default: site.lang | default: "en" }}">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.title }}{% if title and title != "" %} &mdash; {{ title }}{% endif %}</title>
+
+    {% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+    <link rel="apple-touch-icon" href="{{ site.icon }}">
+
+    {%- if eleventy.env.runMode == 'build' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+
+  </head>
+  <body>
+
+    {% if layout == 'home' %}
+      <a href="#main" class="skip-navigation">
+        Skip to list of posts
+      </a>
+    {% else %}
+      <a href="#main" class="skip-navigation">
+        Skip to content
+      </a>
+    {% endif %}
+
+    {{ content }}
+
+    {% unless site.hide_search %}
+      {% include search.html %}
+    {% endunless %}
+
+    {% include menu.html %}
+
+    {% unless site.hide_credits %}
+      <aside class="site-credits">
+        <p>
+          <small><a href="https://github.com/patdryburgh/hitchens">Hitchens Theme</a> powered by <a href="https://www.11ty.dev">Eleventy</a></small>
+        </p>
+      </aside>
+    {% endunless %}
+
+  </body>
+</html>

@@ -1,0 +1,30 @@
+---
+layout: default.njk
+---
+
+{% include "back-link.njk" %}
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
+
+  {% if title and title != "" %}
+    <h1 class="post-title divided p-name" itemprop="name headline">
+      {{ title }}
+    </h1>
+  {% endif %}
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content | safe }}
+  </div>
+
+  <div class="post-meta">
+    {% if author %}
+      <div itemprop="author">{{ author }}</div>
+    {% endif %}
+    <time class="post-date dt-published" datetime="{{ date | htmlDateString }}" itemprop="datePublished">{{ date | readableDate }}</time>
+  </div>
+
+  {% if site.disqus and site.disqus.shortname %}
+    {% include "disqus-comments.njk" %}
+  {% endif %}
+
+</article>

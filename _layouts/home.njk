@@ -1,0 +1,74 @@
+---
+layout: default.njk
+---
+
+{% set pageNum = pagination.pageNumber or 0 %}
+
+{% if menu and pageNum > 0 %}
+  {% include "menu.njk" %}
+{% elif pageNum > 0 %}
+  {% include "back-link.njk" %}
+{% else %}
+  <header class="site-masthead">
+    {% include "menu.njk" %}
+    {% if site.title %}
+      <h1>
+        {{ site.title }}
+      </h1>
+    {% endif %}
+    {% if site.description %}
+      <h2>
+        {{ site.description }}
+      </h2>
+    {% endif %}
+  </header>
+{% endif %}
+
+<main class="home" id="main" role="main" aria-label="Content">
+
+  <h1 class="content-title divided">
+    {% if pageNum > 0 %}
+      Page {{ pageNum + 1 }}
+    {% else %}
+      Contents
+    {% endif %}
+  </h1>
+
+  {% if pagination %}
+
+    <ul class="post-list">
+      {% for post in pagination.items %}
+        {% include "post-list-item.njk" %}
+      {% endfor %}
+    </ul>
+
+    {% if pagination.pages.length > 1 %}
+
+      <div class="post-pagination">
+        {% if pagination.href.next %}
+          <a href="{{ site.baseurl }}{{ pagination.href.next }}" class="pagination-next btn">&lang;&nbsp;Older</a>
+        {% else %}
+          <span>&nbsp;</span>
+        {% endif %}
+        <span class="pagination-number">{{ pageNum + 1 }} of {{ pagination.pages.length }}</span>
+        {% if pagination.href.previous %}
+          <a href="{{ site.baseurl }}{{ pagination.href.previous }}" class="pagination-previous btn">Newer&nbsp;&rang;</a>
+        {% else %}
+          <span>&nbsp;</span>
+        {% endif %}
+      </div>
+
+    {% endif %}
+
+  {% else %}
+
+    <ul class="post-list">
+      {% for post in collections.posts %}
+        {% include "post-list-item.njk" %}
+      {% endfor %}
+    </ul>
+
+  {% endif %}
+
+
+</main>

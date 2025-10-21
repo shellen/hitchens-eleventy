@@ -1,0 +1,19 @@
+<li>
+  <a href="{{ site.baseurl }}{{ post.url }}" class="post-link">
+    <div class="post-link__heading">
+      {% if post.data.title and post.data.title != "" %}
+          <h1 class="post-link__title">
+            {{ post.data.title }}
+          </h1>
+      {% else %}
+        {% include "post-excerpt.njk" %}
+      {% endif %}
+      {% if post.data.title and post.data.title != "" and site.show_excerpts %}
+        {% include "post-excerpt.njk" %}
+      {% endif %}
+    </div>
+    <span class="post-date">
+      {{ post.date | date: "%b %-d, '%y" }}
+    </span>
+  </a>
+</li>
