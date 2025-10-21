@@ -4,6 +4,10 @@ An Eleventy port of [Pat Dryburgh](https://patdryburgh.com)'s beautifully crafte
 
 ![Hitchens Preview](https://raw.githubusercontent.com/patdryburgh/hitchens/master/screenshot.png)
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shellen/hitchens-eleventy)
+
+**[View Demo →](https://hitchens-eleventy.netlify.app)**
+
 ## About This Port
 
 I found Pat Dryburgh's Hitchens theme years ago and wanted to adapt it for users of [Eleventy](https://www.11ty.dev/). This port maintains visual parity with Pat's original design while adapting it to work with Eleventy 3.0's modern tooling.
