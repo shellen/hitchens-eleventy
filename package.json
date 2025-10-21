@@ -9,7 +9,7 @@
     "build:eleventy": "eleventy",
     "build:css": "node build-css.js",
     "watch:css:scss": "sass --watch --load-path=_sass assets/css/main.scss _site/assets/css/main.css",
-    "watch:css:tailwind": "npx tailwindcss -i ./assets/css/tailwind.css -o ./_site/assets/css/main.css --watch"
+    "watch:css:tailwind": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./_site/assets/css/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@tailwindcss/cli": "^4.1.15",
     "autoprefixer": "^10.4.21",
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.0",

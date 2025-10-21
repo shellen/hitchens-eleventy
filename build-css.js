@@ -15,7 +15,7 @@ console.log(`Building CSS using ${framework}...`);
 try {
   if (framework === 'tailwind') {
     execSync(
-      'npx tailwindcss -i ./assets/css/tailwind.css -o ./_site/assets/css/main.css',
+      'npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./_site/assets/css/main.css',
       { stdio: 'inherit' }
     );
   } else if (framework === 'scss') {
