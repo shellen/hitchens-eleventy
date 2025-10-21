@@ -4,6 +4,7 @@ layout: home.njk
 pagination:
   data: collections.posts
   size: 3
+  alias: posts
   reverse: false
 permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagination.pageNumber + 1 }}/index.html{% endif %}"
 ---

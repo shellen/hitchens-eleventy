@@ -37,7 +37,7 @@ layout: default.njk
   {% if pagination %}
 
     <ul class="post-list">
-      {% for post in pagination.items %}
+      {% for post in posts %}
         {% include "post-list-item.njk" %}
       {% endfor %}
     </ul>

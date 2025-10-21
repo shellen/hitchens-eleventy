@@ -1,5 +1,5 @@
 <li>
-  <a href="{{ site.baseurl }}{{ post.url }}" class="post-link">
+  <a href="{{ post.url }}" class="post-link">
     <div class="post-link__heading">
       {% if post.data.title and post.data.title != "" %}
           <h1 class="post-link__title">
@@ -13,7 +13,7 @@
       {% endif %}
     </div>
     <span class="post-date">
-      {{ post.date | date: "%b %-d, '%y" }}
+      {{ post.date | date("%b %-d, '%y") }}
     </span>
   </a>
 </li>
