@@ -15,7 +15,7 @@ I found Pat Dryburgh's Hitchens theme years ago and wanted to adapt it for users
 This port includes:
 - [Eleventy 3.0](https://www.11ty.dev/) for static site generation
 - [Nunjucks](https://mozilla.github.io/nunjucks/) templating
-- [Dart Sass](https://sass-lang.com/dart-sass) for CSS preprocessing
+- Choice of [Tailwind CSS](https://tailwindcss.com/) or [Dart Sass](https://sass-lang.com/dart-sass) for styling
 - Pat's original EB Garamond typography choices
 - The same minimalist DuckDuckGo search integration
 
@@ -55,6 +55,34 @@ Edit `_data/site.json` to configure your site:
   "url": "https://yoursite.com",
   "baseurl": ""
 }
+```
+
+### Choosing Your CSS Framework
+
+This theme supports both **Tailwind CSS** (default) and **SCSS**. You can choose which to use by setting the `css_framework` option in `_data/site.json`:
+
+```json
+{
+  "css_framework": "tailwind"
+}
+```
+
+Valid options are `"tailwind"` or `"scss"`.
+
+The build process will automatically compile the appropriate CSS based on your choice:
+- **Tailwind**: Compiles `assets/css/tailwind.css` using Tailwind's utility classes
+- **SCSS**: Compiles `assets/css/main.scss` using Dart Sass
+
+#### Watching for CSS Changes During Development
+
+If you want to watch for CSS changes while developing:
+
+```bash
+# For Tailwind
+npm run watch:css:tailwind
+
+# For SCSS
+npm run watch:css:scss
 ```
 
 ### Navigation

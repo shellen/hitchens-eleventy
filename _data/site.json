@@ -10,5 +10,6 @@
   "lang": "en",
   "paginate": 3,
   "hide_search": false,
-  "hide_credits": false
+  "hide_credits": false,
+  "css_framework": "tailwind"
 }

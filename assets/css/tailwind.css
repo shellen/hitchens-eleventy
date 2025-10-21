@@ -1,0 +1,21 @@
+/* ABOUTME: Tailwind CSS entry point for the Hitchens Eleventy theme */
+/* ABOUTME: Imports Tailwind's base, components, and utilities */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles to match Hitchens theme */
+@layer base {
+  body {
+    @apply font-garamond;
+  }
+
+  a {
+    @apply text-black;
+  }
+
+  a:hover {
+    @apply opacity-70;
+  }
+}

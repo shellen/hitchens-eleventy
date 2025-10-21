@@ -7,14 +7,21 @@
     "dev": "eleventy --serve",
     "build": "npm run build:css && npm run build:eleventy",
     "build:eleventy": "eleventy",
-    "build:css": "sass --load-path=_sass assets/css/main.scss _site/assets/css/main.css",
-    "watch:css": "sass --watch --load-path=_sass assets/css/main.scss _site/assets/css/main.css"
+    "build:css": "node build-css.js",
+    "watch:css:scss": "sass --watch --load-path=_sass assets/css/main.scss _site/assets/css/main.css",
+    "watch:css:tailwind": "npx tailwindcss -i ./assets/css/tailwind.css -o ./_site/assets/css/main.css --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/patdryburgh/hitchens.git"
   },
-  "keywords": ["eleventy", "eleventy-theme", "blog", "minimal", "starter"],
+  "keywords": [
+    "eleventy",
+    "eleventy-theme",
+    "blog",
+    "minimal",
+    "starter"
+  ],
   "author": "Pat Dryburgh",
   "license": "MIT",
   "bugs": {
@@ -24,9 +31,12 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "autoprefixer": "^10.4.21",
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
-    "sass": "^1.93.2"
+    "postcss": "^8.5.6",
+    "sass": "^1.93.2",
+    "tailwindcss": "^4.1.15"
   }
 }
