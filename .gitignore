@@ -11,3 +11,10 @@ package-lock.json
 
 # Local Netlify folder
 .netlify
+
+# Playwright tests and results
+test-*.spec.js
+test-results/
+playwright-report/
+deployed-site.png
+local-site.png
