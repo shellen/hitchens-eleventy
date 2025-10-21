@@ -129,12 +129,11 @@ Bug reports and pull requests are welcome. If you're reporting a design issue, p
 
 ## License
 
-This project maintains the same [MIT License](https://opensource.org/licenses/MIT) as Pat's original theme.
+This project is licensed under the same [MIT License](https://opensource.org/licenses/MIT) as Pat's original theme.
 
 ### MIT License
 
-Copyright (c) 2018 Pat Dryburgh (original Hitchens theme)
-Copyright (c) 2025 Jason Shellen (Eleventy port)
+Copyright (c) 2018 Pat Dryburgh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
