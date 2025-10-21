@@ -2,7 +2,7 @@
 
 An Eleventy port of [Pat Dryburgh](https://patdryburgh.com)'s beautifully crafted [Hitchens theme](https://github.com/patdryburgh/hitchens).
 
-![Hitchens Preview](https://raw.githubusercontent.com/patdryburgh/hitchens/master/screenshot.png)
+![Hitchens Preview](screenshot.png)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shellen/hitchens-eleventy)
 
