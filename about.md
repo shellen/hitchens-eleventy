@@ -10,7 +10,7 @@ This is a faithful port of the [original Hitchens Jekyll theme](https://github.c
 <figure>
   <img alt="Christopher Hitchens reading his book Hitch-22" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Christopher_Hitchens_reading_his_book_Hitch_22.jpg" />
   <figcaption>
-    Photo licensed under the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-ShareAlike 3.0 Unported</a> license.
+    Photo by <a href="https://www.flickr.com/photos/moosharella/5200821195/">meesh</a>, licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
   </figcaption>
 </figure>
 
