@@ -6,9 +6,7 @@ An Eleventy port of [Pat Dryburgh](https://patdryburgh.com)'s beautifully crafte
 
 ## About This Port
 
-I've long admired Pat Dryburgh's work as a designer, and his Hitchens theme is a perfect example of why. It's a masterclass in restraint—elegant typography, thoughtful spacing, and a design that gets out of the way of the writing. When Pat created this theme for Jekyll in honor of Christopher Hitchens, he nailed the feeling of opening a well-designed book.
-
-I wanted to use Hitchens for my own projects, but I work primarily with [Eleventy](https://www.11ty.dev/) these days. So I ported Pat's theme, taking care to maintain visual parity with his original design while adapting it to work with Eleventy 3.0's modern tooling.
+I found Pat Dryburgh's Hitchens theme years ago and wanted to adapt it for users of [Eleventy](https://www.11ty.dev/). This port maintains visual parity with Pat's original design while adapting it to work with Eleventy 3.0's modern tooling.
 
 This port includes:
 - [Eleventy 3.0](https://www.11ty.dev/) for static site generation
