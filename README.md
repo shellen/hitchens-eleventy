@@ -1,20 +1,23 @@
 # Hitchens for Eleventy
 
-An Eleventy port of the inarguably well-designed [Hitchens Jekyll theme](https://github.com/patdryburgh/hitchens) by [Pat Dryburgh](https://patdryburgh.com).
+An Eleventy port of [Pat Dryburgh](https://patdryburgh.com)'s beautifully crafted [Hitchens theme](https://github.com/patdryburgh/hitchens).
 
 ![Hitchens Preview](https://raw.githubusercontent.com/patdryburgh/hitchens/master/screenshot.png)
 
-Undoubtably one of the great minds of our time, [Christopher Hitchens](https://en.wikipedia.org/wiki/Christopher_Hitchens) challenged his readers to think deeply on topics of politics, religion, war, and science. This theme's design is inspired by the trade paperback version of his book, [Arguably](https://en.wikipedia.org/wiki/Arguably), and is dedicated to his memory.
-
 ## About This Port
 
-This is a faithful Eleventy conversion of Pat Dryburgh's Hitchens theme, originally created for Jekyll. The theme maintains visual parity with the original while leveraging modern build tools:
+I've long admired Pat Dryburgh's work as a designer, and his Hitchens theme is a perfect example of why. It's a masterclass in restraint—elegant typography, thoughtful spacing, and a design that gets out of the way of the writing. When Pat created this theme for Jekyll in honor of Christopher Hitchens, he nailed the feeling of opening a well-designed book.
 
+I wanted to use Hitchens for my own projects, but I work primarily with [Eleventy](https://www.11ty.dev/) these days. So I ported Pat's theme, taking care to maintain visual parity with his original design while adapting it to work with Eleventy 3.0's modern tooling.
+
+This port includes:
 - [Eleventy 3.0](https://www.11ty.dev/) for static site generation
 - [Nunjucks](https://mozilla.github.io/nunjucks/) templating
 - [Dart Sass](https://sass-lang.com/dart-sass) for CSS preprocessing
-- EB Garamond typography
-- Minimalist search via DuckDuckGo
+- Pat's original EB Garamond typography choices
+- The same minimalist DuckDuckGo search integration
+
+All credit for the design goes to Pat. Any bugs in the port are mine.
 
 ## Quick Start
 
@@ -108,36 +111,32 @@ You can hide the search form or credits by setting these in `_data/site.json`:
 
 ### Font
 
-The theme includes [EB Garamond](https://fonts.google.com/specimen/EB+Garamond), designed by Georg Duffner and Octavio Pardo.
+The theme includes [EB Garamond](https://fonts.google.com/specimen/EB+Garamond), designed by Georg Duffner and Octavio Pardo. Pat chose this typeface carefully—it's the closest open-source alternative to the font used on the cover of Hitchens' book *Arguably*.
 
-A [copy of the license](https://github.com/patdryburgh/hitchens/blob/master/assets/fonts/OFL.txt) is included in the `assets/fonts` folder and must be included with any distributions of this theme that include the EB Garamond font files.
+A [copy of the font license](https://github.com/patdryburgh/hitchens/blob/master/assets/fonts/OFL.txt) is included in the `assets/fonts` folder and must be included with any distributions of this theme.
+
+## About Christopher Hitchens
+
+Undoubtably one of the great minds of our time, [Christopher Hitchens](https://en.wikipedia.org/wiki/Christopher_Hitchens) challenged his readers to think deeply on topics of politics, religion, war, and science. This theme's design is inspired by the trade paperback version of his book [Arguably](https://en.wikipedia.org/wiki/Arguably), and is dedicated to his memory.
 
 ## Credits
 
-**Original Theme**: [Hitchens](https://github.com/patdryburgh/hitchens) by [Pat Dryburgh](https://patdryburgh.com)
+**Original Design & Theme**: [Pat Dryburgh](https://patdryburgh.com) created the [Hitchens Jekyll theme](https://github.com/patdryburgh/hitchens). This is his design, his vision, and his impeccable taste in typography.
 
-**Eleventy Port**: This conversion maintains the visual design and spirit of the original theme while adapting it for the Eleventy static site generator.
+**Eleventy Port**: [Jason Shellen](https://github.com/shellen) ported the theme to Eleventy 3.0, attempting to preserve everything that makes the original special.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub.
+Bug reports and pull requests are welcome. If you're reporting a design issue, please check whether it exists in [Pat's original theme](https://github.com/patdryburgh/hitchens) first—the goal of this port is to match his design exactly.
 
 ## License
 
-The code for this theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT), maintaining the same license as the original theme.
+This project maintains the same [MIT License](https://opensource.org/licenses/MIT) as Pat's original theme.
 
-The font, EB Garamond, is Copyright 2017 The EB Garamond Project Authors and licensed under the [SIL Open Font License Version 1.1](https://github.com/patdryburgh/hitchens/blob/master/assets/fonts/OFL.txt).
+### MIT License
 
-Graphics are released to the public domain.
-
-## Original License
-
-This is a derivative work of the Hitchens theme:
-
-```
-The MIT License (MIT)
-
-Copyright (c) 2018 Pat Dryburgh
+Copyright (c) 2018 Pat Dryburgh (original Hitchens theme)
+Copyright (c) 2025 Jason Shellen (Eleventy port)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -156,4 +155,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-```
+
+### Additional Licenses
+
+**EB Garamond Font**: Copyright 2017 The EB Garamond Project Authors. Licensed under the [SIL Open Font License Version 1.1](https://github.com/patdryburgh/hitchens/blob/master/assets/fonts/OFL.txt).
+
+**Graphics**: Released to the public domain.
