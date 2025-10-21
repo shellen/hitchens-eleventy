@@ -8,9 +8,9 @@ Undoubtably one of the great minds of our time, Christopher Hitchens challenged 
 This is a faithful port of the [original Hitchens Jekyll theme](https://github.com/patdryburgh/hitchens) by [Pat Dryburgh](https://patdryburgh.com), converted to work with [Eleventy 3.0](https://www.11ty.dev/). The theme maintains visual parity with the original while leveraging modern static site generation tools.
 
 <figure>
-  <img alt="Christopher Hitchens" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Christopher_Hitchens_2008-04-24_001.jpg" />
+  <img alt="Christopher Hitchens reading his book Hitch-22" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Christopher_Hitchens_reading_his_book_Hitch_22.jpg" />
   <figcaption>
-    Photo by Fri Tanke and licensed under the <a href="https://creativecommons.org/licenses/by/3.0/deed.en">Creative Commons Attribution 3.0 Unported</a> license.
+    Photo licensed under the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-ShareAlike 3.0 Unported</a> license.
   </figcaption>
 </figure>
 
